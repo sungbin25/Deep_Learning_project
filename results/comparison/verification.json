@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "validated_original_csv_files": 250,
+  "week1_week2_identical_files": 250,
+  "unique_signal_contents": 249,
+  "train_test_trial_overlap": 0,
+  "train_test_content_overlap": 0,
+  "models": [
+    "densenet161",
+    "svm",
+    "random_forest"
+  ],
+  "test_windows_per_model": 950,
+  "metrics_recomputed_from_predictions": true,
+  "confusion_matrices_match_predictions": true,
+  "dense_epochs": 5,
+  "executed_notebook_cells": {
+    "semg_week1/week1_semg.ipynb": 5,
+    "semg_week2_RTX/week2_semg.ipynb": 7
+  },
+  "readme_local_links_exist": true,
+  "additional_reproduction_metrics_verified": true
+}

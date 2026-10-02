@@ -1,0 +1,4 @@
+# Python 3.12; install CUDA wheels first when using an NVIDIA GPU (see README).
+-r semg_week2_RTX/requirements-gpu.txt
+torch==2.10.0
+torchvision==0.25.0

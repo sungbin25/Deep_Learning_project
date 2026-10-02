@@ -1,0 +1,11 @@
+split,subject,trials,windows
+train,A,40,760
+train,B,40,760
+train,C,40,760
+train,D,40,760
+train,E,40,760
+test,A,10,190
+test,B,10,190
+test,C,10,190
+test,D,10,190
+test,E,10,190

@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pandas
+scikit-learn
+PyWavelets
+ipykernel
+nbformat
+nbclient
+nbconvert

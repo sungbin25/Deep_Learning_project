@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.10.0+cu128",
+  "torchvision": "0.25.0+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "disk_free_gib": 25.94,
+  "kernel_check_passed": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "vram_gib": 8.0,
+  "compute_capability": [
+    8,
+    9
+  ]
+}

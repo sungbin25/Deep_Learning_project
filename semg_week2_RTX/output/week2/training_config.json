@@ -1,0 +1,18 @@
+{
+  "model": "DenseNet161",
+  "weights": null,
+  "classes": 5,
+  "learning_rate": 0.001,
+  "batch_size": 16,
+  "seed": 42,
+  "threads": 4,
+  "device": "cuda",
+  "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519",
+  "torch": "2.10.0+cu128",
+  "samples_per_epoch": 3800,
+  "dropout": 0.0,
+  "precision": "float32",
+  "backbone": "torchvision standard stem and dense blocks",
+  "parameters": 26483045,
+  "memory_efficient": true
+}

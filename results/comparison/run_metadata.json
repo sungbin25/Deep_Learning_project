@@ -1,0 +1,126 @@
+{
+  "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519",
+  "seed": 42,
+  "feature_spec": "cwt_magnitude_log1p_time_mean_std_ddof0_channels3_scales32_v1",
+  "feature_count": 192,
+  "feature_seconds_this_run": 0.023377100000061546,
+  "test_selection": "No test-based tuning, model selection or early stopping; fixed settings",
+  "metric_unit": "window",
+  "averaging": "macro",
+  "dense": {
+    "name": "DenseNet161 (5 epochs)",
+    "training_seconds": 274.48516250011744,
+    "inference_seconds": 3.7802635000000464,
+    "source": "semg_week2_RTX/output/week2/test_predictions.csv",
+    "source_sha256": "3c5696521ba2e184515850e5e3bf3d0f0f201c46e163ae4e925219219fcc4c34",
+    "config": {
+      "model": "DenseNet161",
+      "weights": null,
+      "classes": 5,
+      "learning_rate": 0.001,
+      "batch_size": 16,
+      "seed": 42,
+      "threads": 4,
+      "device": "cuda",
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519",
+      "torch": "2.10.0+cu128",
+      "samples_per_epoch": 3800,
+      "dropout": 0.0,
+      "precision": "float32",
+      "backbone": "torchvision standard stem and dense blocks",
+      "parameters": 26483045,
+      "memory_efficient": true
+    }
+  },
+  "baselines": {
+    "svm": {
+      "config": {
+        "name": "SVM (RBF)",
+        "C": 1.0,
+        "gamma": "scale",
+        "kernel": "rbf",
+        "random_state": 42
+      },
+      "training_seconds": 0.26231570000004467,
+      "inference_seconds": 0.14937059999988378,
+      "all_estimator_parameters": {
+        "memory": null,
+        "steps": [
+          [
+            "standardscaler",
+            "StandardScaler()"
+          ],
+          [
+            "svc",
+            "SVC(random_state=42)"
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "standardscaler": "StandardScaler()",
+        "svc": "SVC(random_state=42)",
+        "standardscaler__copy": true,
+        "standardscaler__with_mean": true,
+        "standardscaler__with_std": true,
+        "svc__C": 1.0,
+        "svc__break_ties": false,
+        "svc__cache_size": 200,
+        "svc__class_weight": null,
+        "svc__coef0": 0.0,
+        "svc__decision_function_shape": "ovr",
+        "svc__degree": 3,
+        "svc__gamma": "scale",
+        "svc__kernel": "rbf",
+        "svc__max_iter": -1,
+        "svc__probability": "deprecated",
+        "svc__random_state": 42,
+        "svc__shrinking": true,
+        "svc__tol": 0.001,
+        "svc__verbose": false
+      }
+    },
+    "random_forest": {
+      "config": {
+        "name": "Random Forest",
+        "n_estimators": 300,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "max_depth": null,
+        "random_state": 42,
+        "n_jobs": 4
+      },
+      "training_seconds": 1.583057300000064,
+      "inference_seconds": 0.05452349999995931,
+      "all_estimator_parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 300,
+        "n_jobs": 4,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      }
+    }
+  },
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "PyWavelets": "1.10.0",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128"
+  },
+  "completed_utc": "2026-10-02T11:22:53.496548+00:00"
+}

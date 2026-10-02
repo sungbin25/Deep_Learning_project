@@ -1,0 +1,44 @@
+﻿1주차 프로젝트를 다른 Windows 컴퓨터에서 확인하기
+
+통합 GitHub 제출 저장소에서는 상위 폴더 README.md와 python main.py를 우선 사용합니다.
+아래는 1주차 폴더만 독립 실행하는 안내입니다.
+
+1. 이 ZIP을 새 컴퓨터에 복사하고 폴더 전체를 압축 해제합니다.
+   예: D:\Projects\semg_week1
+   ZIP 안에서 바로 파일을 실행하지 마세요.
+
+2. 결과만 확인하려면 output/week1_report.html을 브라우저로 엽니다.
+   Python 설치 없이 표, 파형, 관찰 메모와 선행연구 비교표를 볼 수 있습니다.
+
+3. VS Code에서 확인하려면 semg-week1.code-workspace를 열고
+   week1_semg.ipynb를 엽니다. 기존 실행 결과가 저장되어 있습니다.
+   노트북을 열기 위해 Microsoft Jupyter 확장이 필요할 수 있습니다.
+
+4. 코드를 다시 실행하려면 Python 3.12 64비트와 VS Code의
+   Microsoft Python 및 Jupyter 확장을 설치합니다.
+   프로젝트 폴더의 PowerShell에서 다음 명령을 순서대로 실행합니다.
+
+   py -3.12 -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+   .\.venv\Scripts\python.exe run_notebook.py
+
+   py 명령이 없으면 Python 3.12 설치 후 python -m venv .venv를 사용합니다.
+   패키지 설치에는 인터넷이 필요합니다.
+   이미 데이터를 포함했으므로 download_data.py를 다시 실행할 필요는 없습니다.
+
+5. VS Code에서 직접 다시 실행할 때는 노트북 오른쪽 위 Select Kernel에서
+   .venv/Scripts/python.exe를 선택하고 Run All을 누릅니다.
+   run_notebook.py는 실행 결과를 노트북과 output/week1_report.html에 저장합니다.
+
+포함 내용:
+- 1주차 노트북 및 분석/재실행 코드
+- 원본 CSV 250개, 데이터 README와 CC BY 4.0 LICENSE
+- 데이터 요약, 3명 신호 그림, 관찰 메모, HTML 보고서
+- 설치 패키지 버전 목록 및 VS Code 설정
+- 원본 1주차 강의자료 PDF (docs 폴더, 포함된 경우)
+
+기존 컴퓨터의 .venv는 이식할 수 있는 환경이 아니므로 포함하지 않았습니다.
+새 컴퓨터에서 위 명령으로 다시 만듭니다. 1주차에는 GPU/CUDA/PyTorch가 필요하지 않습니다.
+원본 결과의 Python 경로는 이전 컴퓨터를 가리킬 수 있으며 재실행하면 갱신됩니다.
+2주차 학습 코드·가중치는 이 ZIP에 포함하지 않습니다.
+데이터는 저자의 CC BY 4.0 공개 자료이며 data/README.md와 data/LICENSE를 보존했습니다.

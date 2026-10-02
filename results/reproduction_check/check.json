@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "full_pipeline_exit_code": 0,
+  "started_without_preprocessing_cache": true,
+  "started_without_checkpoint": true,
+  "python_package_environment": "Reused the installed Python 3.12 virtual environment; did not reinstall packages",
+  "preprocessing_arrays_identical": true,
+  "original_scores": [
+    {
+      "model": "DenseNet161 (5 epochs)",
+      "key": "densenet161",
+      "accuracy": 0.8147368421052632,
+      "precision_macro": 0.8285786735342224,
+      "recall_macro": 0.8147368421052631,
+      "f1_macro": 0.8109102491934618,
+      "test_windows": 950,
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519"
+    },
+    {
+      "model": "SVM (RBF)",
+      "key": "svm",
+      "accuracy": 0.8494736842105263,
+      "precision_macro": 0.8502112478795052,
+      "recall_macro": 0.8494736842105264,
+      "f1_macro": 0.8486909867973695,
+      "test_windows": 950,
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519"
+    },
+    {
+      "model": "Random Forest",
+      "key": "random_forest",
+      "accuracy": 0.8263157894736842,
+      "precision_macro": 0.8260626743617607,
+      "recall_macro": 0.8263157894736842,
+      "f1_macro": 0.825374540036192,
+      "test_windows": 950,
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519"
+    }
+  ],
+  "rerun_scores": [
+    {
+      "model": "DenseNet161 (5 epochs)",
+      "key": "densenet161",
+      "accuracy": 0.8747368421052631,
+      "precision_macro": 0.8762679479004609,
+      "recall_macro": 0.874736842105263,
+      "f1_macro": 0.8731205549875789,
+      "test_windows": 950,
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519"
+    },
+    {
+      "model": "SVM (RBF)",
+      "key": "svm",
+      "accuracy": 0.8494736842105263,
+      "precision_macro": 0.8502112478795052,
+      "recall_macro": 0.8494736842105264,
+      "f1_macro": 0.8486909867973695,
+      "test_windows": 950,
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519"
+    },
+    {
+      "model": "Random Forest",
+      "key": "random_forest",
+      "accuracy": 0.8263157894736842,
+      "precision_macro": 0.8260626743617607,
+      "recall_macro": 0.8263157894736842,
+      "f1_macro": 0.825374540036192,
+      "test_windows": 950,
+      "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519"
+    }
+  ],
+  "notebook_path_fix": "Use the interpreter basename instead of assuming it is under the Week 2 directory",
+  "interpretation": "One same-seed re-execution, not a multi-seed performance study. The training code does not force CUDA determinism. All results retained; no score-based replacement of the original checkpoint.",
+  "original_dense_prediction_sha256": "16297d00a8e18429b8d5e688a2bcb9872827327fa8a8d965ba2f1511e88a703a",
+  "rerun_dense_prediction_sha256": "902d3c516751cfe413e92d7ad332af360b37982e0af29f26a9f4fb0a15cde2c2"
+}

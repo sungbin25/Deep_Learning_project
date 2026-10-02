@@ -1,0 +1,28 @@
+**/.venv/
+**/__pycache__/
+**/tmp/
+**/output/week2/checkpoints/
+**/data/processed_week2/
+# Rebuildable feature caches and fitted estimators
+results/cache/
+results/models/
+*.pt
+*.joblib
+# Local environment and packaging artifacts
+**/environment.json
+**/readiness.json
+**/training_progress.json
+**/gpu_console.log
+**/transfer_manifest.json
+**/bundle_manifest.json
+**/verify_bundle.py
+**/Claude outputs/
+# Original lecture handouts are not needed to run the submitted code
+semg_week1/docs/
+# Legacy exports are superseded by the executed notebooks and integrated README.
+semg_week2_RTX/output/week2/*.pdf
+semg_week2_RTX/output/week2/*.docx
+*.zip
+.env
+.env.*
+!.env.example

@@ -1,0 +1,11 @@
+{
+  "checkpoint_epoch": 5,
+  "dataset_id": "3002b32a07766ac629d5ac703bea78e9bd5f5bdf7fefbabf94f8a833e7d6c519",
+  "test_windows": 950,
+  "test_trial_files": 50,
+  "window_accuracy": 0.8147368421052632,
+  "window_macro_f1": 0.8109102491934618,
+  "trial_mean_probability_accuracy": 0.98,
+  "inference_seconds": 3.7802635000000464,
+  "device": "cuda"
+}
